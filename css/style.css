@@ -5,17 +5,22 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background: #10101B;
+    background: url("../image/1374076.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .wrapper{
     max-width: 800px;
     height: 430px;
     display: flex;
-    margin: 0 auto 25px auto;
+    margin: 0px auto 25px auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -29,6 +34,7 @@ body {
     text-align: center;
     margin: 50px 15px;
     position: relative;
+    border-radius: 10px;
 }
 
 .generate-btn{
@@ -137,6 +143,13 @@ input[type='text']:focus {
     margin-top: 10px;
 }
 
+
+
+@media only screen and (min-width: 1400px) {
+    .wrapper{
+        margin: 60px auto 25px auto;
+    }
+}
 
 @media screen and (max-width: 690px) and (min-width: 400px) {
     .notify-section {
