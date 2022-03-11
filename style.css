@@ -1,0 +1,235 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background: #10101B;
+}
+
+.wrapper{
+    max-width: 800px;
+    height: 430px;
+    display: flex;
+    margin: 0 auto 25px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.half-width {
+    width: 310px;
+    height: 100%;
+    background: #222436;
+    padding: 30px 10px;
+    text-align: center;
+    margin: 50px 15px;
+    position: relative;
+}
+
+.generate-btn{
+    width: 180px;
+    padding: 50px;
+    border-radius: 50%;
+    border: 8px solid #39458C;
+    background-color: #495BC3;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.generate-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+input[type='text']{
+    background-color: #3D4153;
+    padding: 10px 0px;
+    color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #858299;
+    height: 50px;
+    padding: 10px;
+}
+
+input[type='text']:focus {
+    background-color: #3D4153;
+    color: #fff;
+    outline: none;
+}
+
+.numbers {
+    margin: 5px 0;
+}
+
+.calc-typed {
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+}
+
+.calc-button-row {
+    width: 100%;
+}
+
+.button {
+    width: 24%;
+    background: #425062;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blink-me {
+    color: #E0B612;
+}
+
+.submit-btn {
+    width: 180px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #495BC3;
+    color: #fff;
+}
+
+.submit-btn:focus{
+    outline: none;
+}
+
+.notify-section{
+    width: 40%;
+    margin: 20px auto;
+}
+
+.notify {
+    color: #fff;
+    text-align: center;
+    margin: 75px auto 15px auto;
+    background: #222436;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: none;
+}
+
+.action-left {
+    color: #FF3C5F;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 690px) and (min-width: 400px) {
+    .notify-section {
+        width: 60%;
+        font-size: 13px;
+    }
+
+    .half-width {
+        width: 45%;
+        height: 100%;
+        padding: 30px 2px;
+        text-align: center;
+        margin: 50px 10px;
+    }
+
+    .generate-btn{
+        height: 150px;
+        width: 150px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .button{
+        width: 25%;
+        padding: 10px 15px;
+        margin: 10px 5px 5px 5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .submit-btn {
+        width: 150px;
+        border: none;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .wrapper{
+        height: 80vh;
+    }
+
+    .half-width{
+        width: 95%;
+        height: auto;
+        margin: 15px 10px 0px 10px;
+        padding: 8px 5px;
+    }
+
+    .pin-generator{
+        padding-top: 15px;
+        height: 30%;
+    }
+
+    .input-section{
+        padding-top: 7px;
+        height: 65%;
+    }
+
+    .generate-btn{
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid #39458C;
+        font-size: 15px;
+        top: 70%;
+    }
+
+    .submit-btn {
+        margin-top: 7px;
+    }
+
+    .button {
+        width: 18%;
+        padding: 6px 15px;
+        margin: 5px 15px;
+        font-size: 20px;
+        margin-right: 2px;
+    }
+
+    .notify-section {
+        width: 80%;
+    }
+
+    .notify {
+        margin: 45px auto 10px auto;
+        background: #222436;
+        border-radius: 15px;
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+}
